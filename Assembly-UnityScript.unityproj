@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{9C1812E5-D345-B9F6-773E-F7A8F1018CB7}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_5;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\GameData\Basic\GameData.js" />
+     <Compile Include="Assets\GameData\Basic\ItemData.js" />
+     <Compile Include="Assets\GameData\Basic\MobData.js" />
+     <Compile Include="Assets\GameData\Basic\Options.js" />
+     <Compile Include="Assets\GameData\Basic\QuickAccess.js" />
+     <Compile Include="Assets\GameData\Basic\StartGUI.js" />
+     <Compile Include="Assets\GameData\Basic\UI Data\BasicGUI.js" />
+     <Compile Include="Assets\GameData\Basic\UI Data\BattleGUI.js" />
+     <Compile Include="Assets\GameData\Basic\UI Data\TextLoader.js" />
+     <Compile Include="Assets\GameData\Basic\Variables and Triggers\Triggers.js" />
+     <Compile Include="Assets\GameData\Basic\Variables and Triggers\Variables.js" />
+     <Compile Include="Assets\GameData\EnemyData\EnemyData.js" />
+     <Compile Include="Assets\GameData\EnemyData\EnemySpawnData.js" />
+     <Compile Include="Assets\GameData\PlayerData\AlexSkill.js" />
+     <Compile Include="Assets\GameData\PlayerData\AlexTitle.js" />
+     <Compile Include="Assets\GameData\PlayerData\AliceSkill.js" />
+     <Compile Include="Assets\GameData\PlayerData\AliceTitle.js" />
+     <Compile Include="Assets\GameData\PlayerData\CharData.js" />
+     <Compile Include="Assets\GameData\PlayerData\EliciaSkill.js" />
+     <Compile Include="Assets\GameData\PlayerData\EliciaTitle.js" />
+     <Compile Include="Assets\GameData\PlayerData\JohnSkill.js" />
+     <Compile Include="Assets\GameData\PlayerData\JohnTitle.js" />
+     <Compile Include="Assets\GameData\PlayerData\LizSkill.js" />
+     <Compile Include="Assets\GameData\PlayerData\LizTitle.js" />
+     <Compile Include="Assets\GameData\PlayerData\MaxSkill.js" />
+     <Compile Include="Assets\GameData\PlayerData\MaxTitle.js" />
+     <Compile Include="Assets\GameData\PlayerData\MiaSkill.js" />
+     <Compile Include="Assets\GameData\PlayerData\MiaTitle.js" />
+     <Compile Include="Assets\GameData\PlayerData\PlayerSpawnData.js" />
+     <Compile Include="Assets\GameData\PlayerData\ZeoSkill.js" />
+     <Compile Include="Assets\GameData\PlayerData\ZeoTitle.js" />
+     <Compile Include="Assets\Scripts\AttackTileScript.js" />
+     <Compile Include="Assets\Scripts\BattleSystem.js" />
+     <Compile Include="Assets\Scripts\EnemySpawn.js" />
+     <Compile Include="Assets\Scripts\MoveTileScript.js" />
+     <Compile Include="Assets\Scripts\PlayerSpawn.js" />
+     <Compile Include="Assets\Scripts\TileValue.js" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Materials and Shaders\MoveShader.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{6DE0171E-A3CC-7761-543A-FD65421CE473}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{049D87FB-9CDA-8F2E-2F03-53CF6A3A1EF1}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
